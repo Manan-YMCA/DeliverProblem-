@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manan Test</title>
+		<script type="text/javascript">
+		//menu logic goes here
+		var gui=require('nw.gui');
+		var win=gui.Window.get();//get window object
+		var menuBar=new gui.Menu({
+			type:'menubar'
+		});//whole menu baar
+		var file=new gui.Menu();//create new menu tab	
+		file.append(new gui.MenuItem({//new item in that tab
+			label:'Like Us on Facebook!',
+			click:function(){
+				gui.Shell.openExternal("http://facebook.com/Manan.ymcaust");//to open something in user's default browser
+			}
+		}));
+		menuBar.append(new gui.MenuItem({ label: 'Contact Us!', submenu: file}));
+		win.menu = menuBar;
+		</script>
+	</head>
+	<body>
+		<h1>Hello Node Webkit</h1>
+	</body>
+</html>
