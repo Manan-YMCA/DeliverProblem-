@@ -13,7 +13,7 @@ var COMPILE_URL = "http://api.hackerearth.com/code/compile/",
     CLIENT_SECRET = "";
 
 app.get('/',function(req, res){
-    res.render('index');
+    res.render('submit_source');
 });
 
 app.post('/submit_code', function(req, res){
