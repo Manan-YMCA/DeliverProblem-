@@ -12,6 +12,6 @@ Contestant has to download build folder of this app before contest and thereafte
  
  When Online provide a leaderBoard of contest by fetching data from localStorage.
  
- Auto-update app when something changes instead of manually downloading app all over again.
+ ~~Auto-update app when something changes instead of manually downloading app all over again~~
  
- Use MongoDB for automatically fetching the problems when new problems/contest is added
+ ~~Use MongoDB for automatically fetching the problems when new problems/contest is added~~
