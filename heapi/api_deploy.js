@@ -10,7 +10,7 @@ app.use(express.bodyParser());
 
 var COMPILE_URL = "http://api.hackerearth.com/code/compile/",
     RUN_URL = "http://api.hackerearth.com/code/run/",
-    CLIENT_SECRET = "5d9059f7ba36c31d73100c6d063ebb680c1cec46";
+    CLIENT_SECRET = "";
 
 app.get('/',function(req, res){
     res.render('index');
