@@ -1,0 +1,15 @@
+angular.module('routesModule',['ngRoute']).config(['$routeProvider',function($routeProvider){
+	$routeProvider.
+	when('/',
+	{
+			templateUrl:"partials/homePage.html",
+			controller:"homePageController"
+	}).
+	when('/loggedIn',{
+		templateUrl:"partials/mainPage.html",
+		controller:"mainPageController"
+	}).
+	otherwise({
+		redirectTo:"/"
+	});
+}]);
