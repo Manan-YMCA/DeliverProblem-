@@ -1,0 +1,1 @@
+var app=angular.module('mananTest',['routesModule','homePageModule','mainPageModule','angular-loading-bar']);
