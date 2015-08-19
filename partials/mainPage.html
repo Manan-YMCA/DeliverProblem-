@@ -1,0 +1,51 @@
+<div class="truncate">
+	<b>{{timeRemaining}}</b> Minutes and {{secondRemaining}} Seconds remaining
+</div>
+<div class="row" >
+    <div class="col s12">
+      <ul class="tabs">
+        <!--Show problems for today there can be maximum of three problems for a day-->
+        <li class="tab col s3"><a class="active" href="#test1">{{problems[0].title}}</a></li>
+        <li class="tab col s3"><a href="#test2">{{problems[1].title}}</a></li>
+        <li class="tab col s3"><a href="#test3">{{problems[2].title}}</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12" ng-bind-html='toTrustedHTML(problems[0].statement)'>
+      {{problems[0].statement}}
+      <br><br>
+      <form class="col s12 center-align form0 fm" id="fo">
+              <input id="fileDialog0" type="file" class="file" ng-model="file" required/>
+              <div class="row col s6 offset-s3">
+                  <button class="btn waves-effect waves-light" id="btn0" type="submit" name="action">Submit
+                    <i class="mdi-content-send right"></i>
+                  </button>
+              </div>
+      </form>
+    </div>
+    <div id="test2" class="col s12" ng-bind-html='toTrustedHTML(problems[1].statement)'>
+      {{problems[1].statement}}
+      <br><br>
+       <form class="col s12 center-align form1 fm" id="form1">
+              <input id="fileDialog1" type="file" class="file" ng-model="file" required/>
+              <div class="row col s6 offset-s3">
+                  <button class="btn waves-effect waves-light" id="btn1" type="submit" name="action">Submit
+                    <i class="mdi-content-send right"></i>
+                  </button>
+              </div>
+      </form>   
+    </div>
+    <div id="test3" class="col s12" ng-bind-html='toTrustedHTML(problems[2].statement)'>
+      {{problems[2].statement}}
+      <br><br>
+      <form class="col s12 center-align form2 fm" id="form2">
+              <input id="fileDialog2" type="file" class="file" ng-model="file" required/>
+              <div class="row col s6 offset-s3">
+                  <button class="btn waves-effect waves-light" id="btn2" type="submit" name="action">Submit
+                    <i class="mdi-content-send right"></i>
+                  </button>
+              </div>
+      </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/fileInputPathSelector.js"></script>
+<script type="text/javascript" src="js/HEAPI.js"></script>
